@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Aladdin and the Flying Carpet | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Aladdin and the Flying CarpetIt’s said that Aladdin had to solve seven mysteries before getting the Magical Lamp which summons a powerful Genie. Here we are concerned about the first mystery. Aladdin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aladdin and the Flying Carpet">
+<meta property="og:url" content="http://yoursite.com/2019/08/22/Aladdin-and-the-Flying-Carpet/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Aladdin and the Flying CarpetIt’s said that Aladdin had to solve seven mysteries before getting the Magical Lamp which summons a powerful Genie. Here we are concerned about the first mystery. Aladdin">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-25T13:34:53.128Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aladdin and the Flying Carpet">
+<meta name="twitter:description" content="Aladdin and the Flying CarpetIt’s said that Aladdin had to solve seven mysteries before getting the Magical Lamp which summons a powerful Genie. Here we are concerned about the first mystery. Aladdin">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Aladdin-and-the-Flying-Carpet" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/22/Aladdin-and-the-Flying-Carpet/" class="article-date">
+  <time datetime="2019-08-22T02:33:46.000Z" itemprop="datePublished">2019-08-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Aladdin and the Flying Carpet
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Aladdin-and-the-Flying-Carpet"><a href="#Aladdin-and-the-Flying-Carpet" class="headerlink" title="Aladdin and the Flying Carpet"></a>Aladdin and the Flying Carpet</h2><p>It’s said that Aladdin had to solve seven mysteries before getting the Magical Lamp which summons a powerful Genie. Here we are concerned about the first mystery.</p>
+<p>Aladdin was about to enter to a magical cave, led by the evil sorcerer who disguised himself as Aladdin’s uncle, found a strange magical flying carpet at the entrance. There were some strange creatures guarding the entrance of the cave. Aladdin could run, but he knew that there was a high chance of getting caught. So, he decided to use the magical flying carpet. The carpet was rectangular shaped, but not square shaped. Aladdin took the carpet and with the help of it he passed the entrance.</p>
+<p>Now you are given the area of the carpet and the length of the minimum possible side of the carpet, your task is to find how many types of carpets are possible. For example, the area of the carpet 12, and the minimum possible side of the carpet is 2, then there can be two types of carpets and their sides are: {2, 6} and {3, 4}.</p>
+<p>Input</p>
+<p>Input starts with an integer <strong>T</strong> (≤ 4000), denoting the number of test cases.</p>
+<p>Each case starts with a line containing two integers: <strong>a</strong> <strong>b</strong> <strong>(1 ≤ b ≤ a ≤ 1012)</strong> where <strong>a</strong> denotes the area of the carpet and <strong>b</strong> denotes the minimum possible side of the carpet.</p>
+<p>Output</p>
+<p>For each case, print the case number and the number of possible carpets.</p>
+<p>Sample Input</p>
+<p>2</p>
+<p>10 2</p>
+<p>12 2</p>
+<p>Sample Output</p>
+<p>Case 1: 1</p>
+<p>Case 2: 2</p>
+<p>其实题目很简单，说的是给一个数，求比最小的因数大的因数对有多少对，很简单，利用唯一分解定理，对输入的数进行素因式分解，然后求所有的因数的个数，除以二就是因数对的个数，再暴力求出[1,b]之间的所有的因数，减去即可</p>
+<p>注意当b &gt; sqrt(a)的时候，直接返回0即可，否则极有可能在后面的[0,b]的暴力中TLE（血与泪的教训）</p>
+<p>AC代码如下</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">1e6</span>+<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> prime[MAXN+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getPrime</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(prime,<span class="number">0</span>,<span class="keyword">sizeof</span>(prime));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=MAXN;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!prime[i])prime[++prime[<span class="number">0</span>]]=i;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=prime[<span class="number">0</span>]&amp;&amp;prime[j]&lt;=MAXN/i;j++)&#123;</span><br><span class="line">            prime[prime[j]*i]=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(i%prime[j]==<span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> factor[<span class="number">100</span>][<span class="number">2</span>];</span><br><span class="line"><span class="keyword">int</span> fatCnt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getFactors</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> x)</span></span>&#123;</span><br><span class="line">    fatCnt=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> tmp=x;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;prime[i]&lt;=tmp/prime[i];i++)&#123;</span><br><span class="line">        factor[fatCnt][<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(tmp%prime[i]==<span class="number">0</span>)&#123;</span><br><span class="line">            factor[fatCnt][<span class="number">0</span>]=prime[i];</span><br><span class="line">            <span class="keyword">while</span>(tmp%prime[i]==<span class="number">0</span>)&#123;</span><br><span class="line">                factor[fatCnt][<span class="number">1</span>]++;</span><br><span class="line">                tmp/=prime[i];</span><br><span class="line">            &#125;</span><br><span class="line">            fatCnt++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(tmp!=<span class="number">1</span>)&#123;</span><br><span class="line">        factor[fatCnt][<span class="number">0</span>]=tmp;</span><br><span class="line">        factor[fatCnt++][<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> fatCnt;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> ans;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a,b;</span><br><span class="line"><span class="keyword">int</span> cnt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    getPrime();</span><br><span class="line">    <span class="keyword">int</span> T,t,Case = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> ans;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        cnt = <span class="number">0</span>;</span><br><span class="line">        ans = <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">        <span class="keyword">if</span>(b &gt; <span class="built_in">sqrt</span>(a)) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case&lt;&lt;<span class="string">": "</span>&lt;&lt; <span class="number">0</span>&lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        getFactors(a);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; fatCnt ; i++)&#123;</span><br><span class="line">            ans *= factor[i][<span class="number">1</span>]+<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        ans /= <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; b ; i++)</span><br><span class="line">            <span class="keyword">if</span>(a%i == <span class="number">0</span>) ans--;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case&lt;&lt;<span class="string">": "</span>&lt;&lt; ans&lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/22/Aladdin-and-the-Flying-Carpet/" data-id="cjzyvrqv600009wwq0k0ixd2q" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/08/22/Sigma-Function/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Sigma Function
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/31/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/25/最短路1/">最短路1</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/22/Leading-and-Trailing/">Leading and Trailing</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/22/Goldbach`s-Conjecture/">Goldbach`s Conjecture</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/22/Sigma-Function/">Sigma Function</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
