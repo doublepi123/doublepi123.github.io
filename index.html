@@ -1,506 +1,174 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
+<html lang="en">
 
-  
-  <title>LCY&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LCY&#39;s Blog">
-<meta property="og:url" content="http://doublepi.github.io/index.html">
-<meta property="og:site_name" content="LCY&#39;s Blog">
-<meta property="og:locale" content="ZH-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LCY&#39;s Blog">
-  
-    <link rel="alternate" href="/atom.xml" title="LCY&#39;s Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>LCY</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
 </head>
-</html>
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">LCY&#39;s Blog</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">lcyzuishuai</a>
-        </h2>
-      
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >LCY</h1>
+                <h4 id="persona-tag" >C++ / Python / Web / 人工智能</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">陆晨阳</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">广西大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2022</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">15578092961</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">admin@luchenyang.xyz</span></li>
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">https://imlcy.com</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/doublepi123</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">c++</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">python</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Java</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">机器学习</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">全栈</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Angular.js、React.js</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Java、Django、Twisted、Node.js、MongoDB、MySQL、Redis</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>广西大学 - 信息与计算科学（本科）2018-2022</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>广西大学雨无声全媒体中心 - 技术部副部长</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>广西大学ACM程序设计竞赛集训队 - 队员</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>国际大学生程序设计竞赛亚洲区域赛 - 铜奖</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
+                        </p>
+                    </li> 
+                    <li>
+                        <h3>高教社杯全国大学生数学建模竞赛 - 广西区三等奖</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
+                        </p>
+                    </li> 
+                    <li>
+                        <h3>广西大学生程序设计竞赛 - 银奖</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
+                        </p>
+                    </li>                     
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://doublepi.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-如何评价ICPC2019银川网络赛" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/31/如何评价ICPC2019银川网络赛/" class="article-date">
-  <time datetime="2019-08-31T04:38:01.000Z" itemprop="datePublished">2019-08-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/31/如何评价ICPC2019银川网络赛/">如何评价ICPC2019银川网络赛</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这个真没办法评价，题都没看就AK了，百度牛逼</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://doublepi.github.io/2019/08/31/如何评价ICPC2019银川网络赛/" data-id="cjzz24v2v0003fwwqod2d2psv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-最短路1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/25/最短路1/" class="article-date">
-  <time datetime="2019-08-25T03:05:57.000Z" itemprop="datePublished">2019-08-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/25/最短路1/">最短路1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="最短路-1"><a href="#最短路-1" class="headerlink" title="最短路 1"></a>最短路 1</h2><p> Accepts: 3515</p>
-<p> Submissions: 5445</p>
-<p> Time Limit: 2000/1000 MS (Java/Others)</p>
-<p> Memory Limit: 32768/32768 K (Java/Others)</p>
-<p>Problem Description</p>
-<p>有一张 n<em>n</em> 个点的完全无向图，点的标号是 1…n1…<em>n</em>，其中边 (i,j)(<em>i</em>,<em>j</em>) 的长度是 i<del>xor</del>j<em>i</em> <em>x<strong>o</strong>r</em> <em>j</em>，现在你需要求出点 1 到点 <em>n</em> 的最短路的长度。</p>
-<p>Input</p>
-<p>第一行一个正整数 <em>T</em> 表示数据组数 T  1≤<em>T</em>≤100</p>
-<p>对于每组数据：第一行一个正整数 <em>n</em> 表示点数 (2≤<em>n</em>≤10^5)</p>
-<p>Output</p>
-<p>输出 <em>T</em> 行，每行一个整数表示点 1 到点 <em>n</em> 的最短路</p>
-<p>Sample Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-
-<p>Sample Output</p>
-<p>Copy</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
-
-<p>签到题，仔细分析异或就会发现，异或之后的数必然是正数，而直接用1异或n就已经是二进制中位数差异最小的情况了，无需借助其他数作为中转，因此直接1^n即为答案，签到完毕</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> T;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">	<span class="keyword">while</span>(T--)&#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="number">1</span>^n &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://doublepi.github.io/2019/08/25/最短路1/" data-id="cjzz24v370005fwwq4zzu42ag" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Leading-and-Trailing" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/22/Leading-and-Trailing/" class="article-date">
-  <time datetime="2019-08-22T09:01:11.000Z" itemprop="datePublished">2019-08-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/22/Leading-and-Trailing/">Leading and Trailing</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Leading-and-Trailing"><a href="#Leading-and-Trailing" class="headerlink" title="Leading and Trailing"></a>Leading and Trailing</h2><p>You are given two integers: <strong>n</strong> and <strong>k</strong>, your task is to find the most significant three digits, and least significant three digits of<br>$$<br>n^{k}<br>$$</p>
-<p>Input</p>
-<p>Input starts with an integer <strong>T (</strong>≤ 1000), denoting the number of test cases.</p>
-<p>Each case starts with a line containing two integers: <strong>n (2 ≤ n &lt; 231)</strong> and <strong>k (1 ≤ k ≤ 107)</strong>.</p>
-<p>Output</p>
-<p>For each case, print the case number and the three leading digits (most significant) and three trailing digits (least significant). You can assume that the input is given such that <strong>nk</strong> contains at least six digits.</p>
-<p>Sample Input</p>
-<p>5</p>
-<p>123456 1</p>
-<p>123456 2</p>
-<p>2 31</p>
-<p>2 32</p>
-<p>29 8751919</p>
-<p>Sample Output</p>
-<p>Case 1: 123 456</p>
-<p>Case 2: 152 936</p>
-<p>Case 3: 214 648</p>
-<p>Case 4: 429 296</p>
-<p>Case 5: 665 669</p>
-<p>显然，后三位是直接对1000取余，然后找循环节，对幂次取余再从循环节中找即可，听说快速幂也可以，未作尝试</p>
-<p>对于前三位，刚开始的想法是和后三位类似，但是我们保留前5位，用来避免进位带来的影响，但是第五组样例就WA掉了，可能是幂次太高的时候，进位的累积效应会影响到前三位，先贴出错误代码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">1e3</span>+<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> a[MAXN],b[MAXN];</span><br><span class="line"><span class="keyword">int</span> m[(<span class="keyword">int</span>)<span class="number">1e5</span>+<span class="number">10</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getTrail</span><span class="params">(<span class="keyword">int</span> n , <span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(m,<span class="number">0</span>,<span class="keyword">sizeof</span>(m));</span><br><span class="line">    <span class="keyword">int</span> trail,loop,l;</span><br><span class="line">    trail = n % <span class="number">1000</span>;</span><br><span class="line">    b[<span class="number">1</span>] = trail;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span> ; i &lt; <span class="number">1003</span> ; i++)&#123;</span><br><span class="line">        b[i] = b[i<span class="number">-1</span>]*trail % <span class="number">1000</span>;</span><br><span class="line">        <span class="keyword">if</span>(m[b[i]])&#123;</span><br><span class="line">            loop = i-m[b[i]];</span><br><span class="line">            l = m[b[i]];</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        m[b[i]] = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(k &lt; l) trail = b[k];</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        k -= l - <span class="number">1</span> ;</span><br><span class="line">        k %= loop;</span><br><span class="line">        trail = b[l<span class="number">-1</span>+k];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> trail;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lll5</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(n &gt; <span class="number">1e5</span>) n/= <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lll3</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(n &gt; <span class="number">1e3</span>) n/= <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getLead</span><span class="params">(<span class="keyword">int</span> n,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> loop,l;</span><br><span class="line">    <span class="built_in">memset</span>(m,<span class="number">0</span>, <span class="keyword">sizeof</span>(m));</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> lead = lll5(n);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> last = lll5(n);</span><br><span class="line">    a[<span class="number">1</span>] = lll3(lead);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; <span class="number">1e3</span>+<span class="number">5</span> ; i++)&#123;</span><br><span class="line">        a[i] = last = lll5(last * lead);</span><br><span class="line">        <span class="keyword">if</span>(m[last])&#123;</span><br><span class="line">            loop = i - m[last];</span><br><span class="line">            l = i;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        m[last] = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(k &lt; l) lead = a[k];</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        k -= l - <span class="number">1</span> ;</span><br><span class="line">        k %= loop;</span><br><span class="line">        lead = a[l<span class="number">-1</span>+k];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> lll3(lead);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T,Case,lead,trail;</span><br><span class="line">    <span class="keyword">int</span> n,k;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(Case &lt; T)&#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; n &gt;&gt; k;</span><br><span class="line">        <span class="keyword">if</span>(k == <span class="number">0</span>)&#123;</span><br><span class="line">            trail = <span class="number">1</span>;</span><br><span class="line">            lead = <span class="number">1</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            trail = getTrail(n, k);</span><br><span class="line">            lead = getLead(n, k);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case &lt;&lt;<span class="string">": "</span>&lt;&lt; lead &lt;&lt;<span class="string">" "</span> &lt;&lt;trail &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>后来考虑到使用换底公式，可以比较快的得到正确的答案<br>$$<br>x = lg (n^{k})=klg(n)<br>$$</p>
-<p>$$<br>10^{x} = 10^{klg(n)}<br>$$</p>
-<p>把x的小数部分取出，前三位小数即为所求，取出小数部分可以直接用浮点数减去取整之后的数即可即：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = k*<span class="built_in">log</span>(n);</span><br><span class="line">x = x-(<span class="keyword">int</span>)x;</span><br><span class="line">x *= <span class="number">1000</span>;</span><br></pre></td></tr></table></figure>
-
-<p>提交后又WA了，可能是尾巴那一部分有问题，直接改用快速幂</p>
-<p>AC代码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">1e3</span>+<span class="number">10</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">quickpow</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> n,<span class="keyword">long</span> <span class="keyword">long</span> k)</span></span>&#123;</span><br><span class="line">    n %= <span class="number">1000</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> ans = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(k)&#123;</span><br><span class="line">        <span class="keyword">if</span>(k&amp;<span class="number">1</span>)&#123;</span><br><span class="line">            ans *= n;</span><br><span class="line">            ans %= <span class="number">1000</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        n *= n;</span><br><span class="line">        n %= <span class="number">1000</span>;</span><br><span class="line">        k &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T,Case,lead;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> n,k;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(Case &lt; T)&#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; n &gt;&gt; k;</span><br><span class="line">        <span class="keyword">double</span> x = <span class="built_in">log10</span>(n) *k;</span><br><span class="line">        x -= (<span class="keyword">int</span>)x;</span><br><span class="line">        lead = <span class="built_in">pow</span>(<span class="number">10</span>,x+<span class="number">2.0</span>);</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case &lt;&lt;<span class="string">": "</span>&lt;&lt; lead &lt;&lt;<span class="string">" "</span> ;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%03d\n"</span>,quickpow(n,k));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意后三位可能是0开头的情况，因此WA了两发</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://doublepi.github.io/2019/08/22/Leading-and-Trailing/" data-id="cjzz24v2x0004fwwqlm9pc6de" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Goldbach`s-Conjecture" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/22/Goldbach`s-Conjecture/" class="article-date">
-  <time datetime="2019-08-22T02:35:26.000Z" itemprop="datePublished">2019-08-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/22/Goldbach`s-Conjecture/">Goldbach`s Conjecture</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Goldbach-s-Conjecture"><a href="#Goldbach-s-Conjecture" class="headerlink" title="Goldbach`s Conjecture"></a>Goldbach`s Conjecture</h2><p>Goldbach’s conjecture is one of the oldest unsolved problems in number theory and in all of mathematics. It states:</p>
-<p>Every even integer, greater than 2, can be expressed as the sum of two primes [1].</p>
-<p>Now your task is to check whether this conjecture holds for integers up to <strong>107</strong>.</p>
-<p>​              </p>
-<p>Input</p>
-<p>​         </p>
-<p>Input starts with an integer <strong>T (**</strong>≤ 300)**, denoting the number of test cases.</p>
-<p>Each case starts with a line containing an integer <strong>n (4 ≤ n ≤ 107, n is even)</strong>.</p>
-<p>​              </p>
-<p>Output</p>
-<p>​         </p>
-<p>For each case, print the case number and the number of ways you can express <strong>n</strong> as sum of two primes. To be more specific, we want to find the number of <strong>(a, b)</strong> where</p>
-<p>1)      Both <strong>a</strong> and <strong>b</strong> are prime</p>
-<p>2)      <strong>a + b = n</strong></p>
-<p>3)      <strong>a ≤ b</strong></p>
-<p>​              </p>
-<p>Sample Input</p>
-<p>​         </p>
-<p>2</p>
-<p>6</p>
-<p>4</p>
-<p>​              </p>
-<p>Sample Output</p>
-<p>​         </p>
-<p>Case 1: 1</p>
-<p>Case 2: 1</p>
-<p>​              </p>
-<p>Note</p>
-<p>​         </p>
-<ol>
-<li>An integer is said to be prime, if it is divisible by exactly two different integers. First few primes are 2, 3, 5, 7, 11, 13, …</li>
-</ol>
-<p>第一遍没有看懂题目，先送一发WA，后来发现就是简单的打表就行了，MLE。。。。。没注意内存的限制，因为只有上32MB内存，所以1e7的int显然是开不了的，只好省省内存，写长点代码</p>
-<p>代码如下：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">1e7</span>;</span><br><span class="line"><span class="keyword">int</span> prime[(<span class="keyword">int</span>)<span class="number">1e6</span>];</span><br><span class="line"><span class="keyword">bool</span> notprime[MAXN];<span class="comment">//值为false 表示素数，值为true 表示非素数</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(notprime,<span class="literal">false</span>,<span class="keyword">sizeof</span>(notprime));</span><br><span class="line">    notprime[<span class="number">0</span>]=notprime[<span class="number">1</span>]=<span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;MAXN;i++)</span><br><span class="line">        <span class="keyword">if</span>(!notprime[i])&#123;</span><br><span class="line">        <span class="keyword">if</span>(i&gt;MAXN/i)<span class="keyword">continue</span>;<span class="comment">//防止后面i*i 溢出(或者i,j 用lon</span></span><br><span class="line">        <span class="comment">//直接从i*i 开始就可以，小于i 倍的已经筛选过了, 注意是j+=i</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=i*i;j&lt;MAXN;j+=i)</span><br><span class="line">            notprime[j]=<span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    init();</span><br><span class="line">    <span class="keyword">int</span> T,Case,n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span> ; i &lt; MAXN ; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!notprime[i]) prime[++prime[<span class="number">0</span>]] = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(Case &lt; T)&#123;</span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt;= prime[<span class="number">0</span>] ; i++)&#123;</span><br><span class="line">            <span class="comment">//cout &lt;&lt;i &lt;&lt; " " &lt;&lt; prime[i] &lt;&lt;" "&lt;&lt; p[n-prime[i]]&lt;&lt;endl;</span></span><br><span class="line">            <span class="keyword">if</span>(prime[i] &gt; n/<span class="number">2</span>) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span>(!notprime[n-prime[i]]) cnt++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case &lt;&lt;<span class="string">": "</span>&lt;&lt; cnt &lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://doublepi.github.io/2019/08/22/Goldbach`s-Conjecture/" data-id="cjzz24v2t0001fwwq2iea283g" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Sigma-Function" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/22/Sigma-Function/" class="article-date">
-  <time datetime="2019-08-22T02:35:26.000Z" itemprop="datePublished">2019-08-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/22/Sigma-Function/">Sigma Function</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Sigma-Function"><a href="#Sigma-Function" class="headerlink" title="Sigma Function"></a>Sigma Function</h2><p>Sigma function is an interesting function in Number Theory. It is denoted by the Greek letter Sigma (σ). This function actually denotes the sum of all divisors of a number. For example σ(24) = 1+2+3+4+6+8+12+24=60. Sigma of small numbers is easy to find but for large numbers it is very difficult to find in a straight forward way. But mathematicians have discovered a formula to find sigma. If the prime power decomposition of an integer is</p>
-<p><img src="https://vj.ti12z.cn/a2ab9ccfa8dc3527ba82e70d2d8db6bf?v=1566350558" alt="img"></p>
-<p>Then we can write,</p>
-<p><img src="https://vj.ti12z.cn/1510021ce5adea20ba5ebd2baa22e212?v=1566350558" alt="img"></p>
-<p>For some <strong>n</strong> the value of <strong>σ(n)</strong> is odd and for others it is even. Given a value <strong>n</strong>, you will have to find how many integers from <strong>1</strong> to <strong>n</strong> have <strong>even</strong> value of <strong>σ</strong>.Input</p>
-<p>Input starts with an integer <strong>T (**</strong>≤ 100)**, denoting the number of test cases.</p>
-<p>Each case starts with a line containing an integer <strong>n (1 ≤ n ≤ 1012)</strong>.Output</p>
-<p>For each case, print the case number and the result.Sample Input</p>
-<p>4</p>
-<p>3</p>
-<p>10</p>
-<p>100</p>
-<p>1000Sample Output</p>
-<p>Case 1: 1</p>
-<p>Case 2: 5</p>
-<p>Case 3: 83</p>
-<p>Case 4: 947</p>
-<p>先暴力打表，找规律，发现F(x) = x - sqrt(x)- sqrt(x/2)</p>
-<p>直接变成o（1）的题目</p>
-<p>注意long long ，因此wa了三发</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> T,n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">int</span> Case = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span>  ans = n;</span><br><span class="line">        ans -= (<span class="keyword">long</span> <span class="keyword">long</span>) (<span class="built_in">sqrt</span>(n));</span><br><span class="line">        ans -= (<span class="keyword">long</span> <span class="keyword">long</span>) (<span class="built_in">sqrt</span>(n/<span class="number">2</span>));</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case&lt;&lt;<span class="string">": "</span>&lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://doublepi.github.io/2019/08/22/Sigma-Function/" data-id="cjzz24v2v0002fwwqpoi1y5z0" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Aladdin-and-the-Flying-Carpet" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/22/Aladdin-and-the-Flying-Carpet/" class="article-date">
-  <time datetime="2019-08-22T02:33:46.000Z" itemprop="datePublished">2019-08-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/22/Aladdin-and-the-Flying-Carpet/">Aladdin and the Flying Carpet</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Aladdin-and-the-Flying-Carpet"><a href="#Aladdin-and-the-Flying-Carpet" class="headerlink" title="Aladdin and the Flying Carpet"></a>Aladdin and the Flying Carpet</h2><p>It’s said that Aladdin had to solve seven mysteries before getting the Magical Lamp which summons a powerful Genie. Here we are concerned about the first mystery.</p>
-<p>Aladdin was about to enter to a magical cave, led by the evil sorcerer who disguised himself as Aladdin’s uncle, found a strange magical flying carpet at the entrance. There were some strange creatures guarding the entrance of the cave. Aladdin could run, but he knew that there was a high chance of getting caught. So, he decided to use the magical flying carpet. The carpet was rectangular shaped, but not square shaped. Aladdin took the carpet and with the help of it he passed the entrance.</p>
-<p>Now you are given the area of the carpet and the length of the minimum possible side of the carpet, your task is to find how many types of carpets are possible. For example, the area of the carpet 12, and the minimum possible side of the carpet is 2, then there can be two types of carpets and their sides are: {2, 6} and {3, 4}.</p>
-<p>Input</p>
-<p>Input starts with an integer <strong>T</strong> (≤ 4000), denoting the number of test cases.</p>
-<p>Each case starts with a line containing two integers: <strong>a</strong> <strong>b</strong> <strong>(1 ≤ b ≤ a ≤ 1012)</strong> where <strong>a</strong> denotes the area of the carpet and <strong>b</strong> denotes the minimum possible side of the carpet.</p>
-<p>Output</p>
-<p>For each case, print the case number and the number of possible carpets.</p>
-<p>Sample Input</p>
-<p>2</p>
-<p>10 2</p>
-<p>12 2</p>
-<p>Sample Output</p>
-<p>Case 1: 1</p>
-<p>Case 2: 2</p>
-<p>其实题目很简单，说的是给一个数，求比最小的因数大的因数对有多少对，很简单，利用唯一分解定理，对输入的数进行素因式分解，然后求所有的因数的个数，除以二就是因数对的个数，再暴力求出[1,b]之间的所有的因数，减去即可</p>
-<p>注意当b &gt; sqrt(a)的时候，直接返回0即可，否则极有可能在后面的[0,b]的暴力中TLE（血与泪的教训）</p>
-<p>AC代码如下</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">1e6</span>+<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> prime[MAXN+<span class="number">1</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getPrime</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(prime,<span class="number">0</span>,<span class="keyword">sizeof</span>(prime));</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=MAXN;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!prime[i])prime[++prime[<span class="number">0</span>]]=i;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=prime[<span class="number">0</span>]&amp;&amp;prime[j]&lt;=MAXN/i;j++)&#123;</span><br><span class="line">            prime[prime[j]*i]=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(i%prime[j]==<span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> factor[<span class="number">100</span>][<span class="number">2</span>];</span><br><span class="line"><span class="keyword">int</span> fatCnt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getFactors</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> x)</span></span>&#123;</span><br><span class="line">    fatCnt=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> tmp=x;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;prime[i]&lt;=tmp/prime[i];i++)&#123;</span><br><span class="line">        factor[fatCnt][<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(tmp%prime[i]==<span class="number">0</span>)&#123;</span><br><span class="line">            factor[fatCnt][<span class="number">0</span>]=prime[i];</span><br><span class="line">            <span class="keyword">while</span>(tmp%prime[i]==<span class="number">0</span>)&#123;</span><br><span class="line">                factor[fatCnt][<span class="number">1</span>]++;</span><br><span class="line">                tmp/=prime[i];</span><br><span class="line">            &#125;</span><br><span class="line">            fatCnt++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(tmp!=<span class="number">1</span>)&#123;</span><br><span class="line">        factor[fatCnt][<span class="number">0</span>]=tmp;</span><br><span class="line">        factor[fatCnt++][<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> fatCnt;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> ans;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a,b;</span><br><span class="line"><span class="keyword">int</span> cnt;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    getPrime();</span><br><span class="line">    <span class="keyword">int</span> T,t,Case = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> ans;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        cnt = <span class="number">0</span>;</span><br><span class="line">        ans = <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; a &gt;&gt; b;</span><br><span class="line">        <span class="keyword">if</span>(b &gt; <span class="built_in">sqrt</span>(a)) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case&lt;&lt;<span class="string">": "</span>&lt;&lt; <span class="number">0</span>&lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        getFactors(a);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; fatCnt ; i++)&#123;</span><br><span class="line">            ans *= factor[i][<span class="number">1</span>]+<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        ans /= <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span> ; i &lt; b ; i++)</span><br><span class="line">            <span class="keyword">if</span>(a%i == <span class="number">0</span>) ans--;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt;<span class="string">"Case "</span>&lt;&lt;++Case&lt;&lt;<span class="string">": "</span>&lt;&lt; ans&lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://doublepi.github.io/2019/08/22/Aladdin-and-the-Flying-Carpet/" data-id="cjzz24v2p0000fwwqy6ba9nyr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/08/31/如何评价ICPC2019银川网络赛/">如何评价ICPC2019银川网络赛</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/25/最短路1/">最短路1</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/22/Leading-and-Trailing/">Leading and Trailing</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/22/Goldbach`s-Conjecture/">Goldbach`s Conjecture</a>
-          </li>
-        
-          <li>
-            <a href="/2019/08/22/Sigma-Function/">Sigma Function</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 Doublepi<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
 </body>
+
 </html>
