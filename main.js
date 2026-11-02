@@ -41,6 +41,9 @@ function applyLanguage() {
   for (const element of document.querySelectorAll("[data-i18n-aria]")) {
     element.setAttribute("aria-label", copy[element.dataset.i18nAria]);
   }
+  for (const element of document.querySelectorAll("[data-i18n-href]")) {
+    element.href = copy[element.dataset.i18nHref];
+  }
   toggle.querySelector("[data-language-label]").textContent = language === "zh" ? "EN" : "中文";
   toggle.lang = language === "zh" ? "en" : "zh-CN";
   toggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换为简体中文");

@@ -2,7 +2,7 @@ export const messages = {
   zh: {
     "page.title": "Cox — 你的智能体，你的主场",
     "page.description":
-      "Cox 是面向编码智能体的本地 Web 工作台：在浏览器里连接 Codex、Claude、Cursor 等智能体，管理会话、终端与代码变更。",
+      "Cox 是面向编码智能体的本地 Web 工作台：在浏览器里连接 Codex、Claude、Cursor 等智能体，管理对话、终端与代码变更。",
     skip: "跳到内容",
     "nav.label": "主导航",
     "nav.features": "功能",
@@ -13,7 +13,7 @@ export const messages = {
     "hero.line1b": "你的工作台",
     "hero.line2": "尽在你的主场",
     "hero.description":
-      "Cox 把 Codex、Claude、Cursor 等编码智能体，连同会话、终端与代码变更，放进同一个在你电脑上运行的浏览器工作台。",
+      "Cox 把 Codex、Claude、Cursor 等编码智能体，连同对话、终端与代码变更，放进同一个在你电脑上运行的浏览器工作台。",
     "hero.cta": "立即开始",
     "hero.source": "查看源码",
     "hero.note": "推荐 Node.js 26.12.1 · 需自备智能体账号或 API",
@@ -24,7 +24,7 @@ export const messages = {
     "demo.switch": "切换示例智能体",
     "demo.label": "Cox 界面示意",
     "demo.caption": "界面示意：切换智能体只会改变示例内容，不会连接服务或启动任务。",
-    "demo.newThread": "新会话",
+    "demo.newThread": "新建对话",
     "demo.projects": "项目",
     "demo.thread": "添加中英文切换",
     "demo.thread2": "修复登录跳转",
@@ -68,7 +68,7 @@ export const messages = {
     "feature.queue.steer": "立即引导",
     "feature.review.title": "看清每一处变更",
     "feature.review.description":
-      "在会话旁查看代码差异，用检查点回到之前任意一轮的状态，确认无误再继续。",
+      "在对话旁查看代码差异，用检查点回到之前任意一轮的状态，确认无误再继续。",
     "feature.review.checkpoints": "3 个检查点",
     "feature.review.restore": "回到第 2 轮",
     "feature.terminal.title": "终端与 Git 就在手边",
@@ -87,11 +87,11 @@ export const messages = {
     "feature.more.themes": "主题与字体",
     "feature.more.keys": "自定义快捷键",
     "feature.more.secrets": "密钥管理",
-    "feature.more.archive": "会话归档",
+    "feature.more.archive": "对话归档",
     "local.eyebrow": "本地优先",
     "local.title": "你的项目，不必搬家",
     "local.description":
-      "Cox 的服务运行在你自己的电脑上，默认只监听本机回环地址。项目、会话历史、凭据与检查点都保存在本地 Cox 数据目录，而不是某个云端账号里。",
+      "Cox 的服务运行在你自己的电脑上，默认只监听本机回环地址。项目、对话历史、凭据与检查点都保存在本地 Cox 数据目录，而不是某个云端账号里。",
     "local.point1": "无需注册 Cox 云端账号",
     "local.point2": "本地认证保护你的工作台",
     "local.point3": "MIT 开源，代码可审计",
@@ -113,8 +113,10 @@ export const messages = {
     "step2.description":
       "在设置中添加智能体。CLI 型智能体需在本机安装并完成登录；也可以配置受支持的 API 网关。",
     "step3.title": "打开项目，开始构建",
-    "step3.description": "添加本地项目目录，新建会话并选择模型，然后说出你的第一个想法。",
+    "step3.description": "添加本地项目目录，新建对话并选择模型，然后说出你的第一个想法。",
     "start.docs": "完整使用说明",
+    "start.docsHref":
+      "https://github.com/doublepi123/cox/blob/main/README.zh-CN.md#通过-npm-快速开始",
     "start.terminal": "终端",
     "start.comment": "# 直接运行最新版本",
     "start.global": "# 或者全局安装",
@@ -257,6 +259,7 @@ export const messages = {
     "step3.description":
       "Add a local project folder, start a thread, pick a model, and describe your first idea.",
     "start.docs": "Read the full guide",
+    "start.docsHref": "https://github.com/doublepi123/cox#quick-start-npm",
     "start.terminal": "Terminal",
     "start.comment": "# Run the latest version",
     "start.global": "# Or install it globally",
