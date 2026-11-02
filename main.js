@@ -1,11 +1,11 @@
 import { messages, resolveLanguage } from "./content.js";
 
 const preferenceKey = "cox.site.language";
-const agents = {
-  codex: { name: "Codex", mark: "C_" },
-  claude: { name: "Claude", mark: "✳" },
-  cursor: { name: "Cursor", mark: "↗" },
-};
+const agentNames = { codex: "Codex", claude: "Claude", cursor: "Cursor" };
+const demo = document.querySelector("[data-demo]");
+const toggle = document.querySelector("[data-language-toggle]");
+const toast = document.querySelector("[data-toast]");
+const copiedTimeouts = new WeakMap();
 let preference;
 try {
   preference = localStorage.getItem(preferenceKey);
@@ -17,11 +17,10 @@ let selectedAgent = "codex";
 let toastTimeout;
 
 function updateAgent() {
-  const agent = agents[selectedAgent];
+  demo.dataset.agent = selectedAgent;
   for (const element of document.querySelectorAll("[data-agent-name]")) {
-    element.textContent = agent.name;
+    element.textContent = agentNames[selectedAgent];
   }
-  document.querySelector("[data-agent-avatar]").textContent = agent.mark;
   document.querySelector("[data-agent-message]").textContent =
     messages[language][`demo.${selectedAgent}`];
   for (const button of document.querySelectorAll("[data-provider]")) {
@@ -42,13 +41,20 @@ function applyLanguage() {
   for (const element of document.querySelectorAll("[data-i18n-aria]")) {
     element.setAttribute("aria-label", copy[element.dataset.i18nAria]);
   }
-  const toggle = document.querySelector("[data-language-toggle]");
-  toggle.textContent = language === "zh" ? "EN ↗" : "中文 ↗";
+  toggle.querySelector("[data-language-label]").textContent = language === "zh" ? "EN" : "中文";
+  toggle.lang = language === "zh" ? "en" : "zh-CN";
   toggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换为简体中文");
   updateAgent();
 }
 
-document.querySelector("[data-language-toggle]").addEventListener("click", () => {
+function showToast(text) {
+  clearTimeout(toastTimeout);
+  toast.textContent = text;
+  toast.classList.add("visible");
+  toastTimeout = setTimeout(() => toast.classList.remove("visible"), 3000);
+}
+
+toggle.addEventListener("click", () => {
   language = language === "zh" ? "en" : "zh";
   applyLanguage();
   try {
@@ -60,7 +66,7 @@ document.querySelector("[data-language-toggle]").addEventListener("click", () =>
 
 for (const button of document.querySelectorAll("[data-provider]")) {
   button.addEventListener("click", () => {
-    if (!Object.hasOwn(agents, button.dataset.provider)) return;
+    if (!Object.hasOwn(agentNames, button.dataset.provider)) return;
     selectedAgent = button.dataset.provider;
     updateAgent();
   });
@@ -68,17 +74,19 @@ for (const button of document.querySelectorAll("[data-provider]")) {
 
 for (const button of document.querySelectorAll("[data-copy]")) {
   button.addEventListener("click", async () => {
-    const toast = document.querySelector("[data-toast]");
-    let key = "copy.success";
     try {
       await navigator.clipboard.writeText(button.dataset.copy);
     } catch {
-      key = "copy.failure";
+      showToast(messages[language]["copy.failure"]);
+      return;
     }
-    clearTimeout(toastTimeout);
-    toast.textContent = messages[language][key];
-    toast.classList.add("visible");
-    toastTimeout = setTimeout(() => toast.classList.remove("visible"), 3500);
+    clearTimeout(copiedTimeouts.get(button));
+    button.classList.add("is-copied");
+    copiedTimeouts.set(
+      button,
+      setTimeout(() => button.classList.remove("is-copied"), 2000),
+    );
+    showToast(messages[language]["copy.success"]);
   });
 }
 
