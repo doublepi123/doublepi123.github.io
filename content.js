@@ -121,7 +121,7 @@ export const messages = {
     "start.footer": "Cox 会启动仅限本机访问的服务，并自动打开浏览器。",
     "start.disclaimer":
       "Cox 不包含模型订阅或 API 额度，请使用你自己的账号与凭据。如果原生依赖没有适用于你平台的预编译版本，安装时可能需要 C/C++ 构建工具。",
-    "closing.title1": "下一件作品，",
+    "closing.title1": "下一件作品",
     "closing.title2": "从你的主场开始",
     "closing.description": "开源、本地运行、由你掌控。",
     "closing.cta": "在 GitHub 上探索 Cox",

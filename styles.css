@@ -295,16 +295,8 @@ h1 {
   display: inline-block;
 }
 
-.title-line > span {
-  margin-inline: 0.14em;
-}
-
-:lang(zh) .title-line > span {
-  margin-inline: 0.25em;
-}
-
-:lang(en) .title-phrase {
-  margin-inline: 0.13em;
+:lang(zh) :is(.title-line > span, .title-phrase) {
+  margin-inline: 0.12em;
 }
 
 :lang(zh) :is(h2, h3) {
