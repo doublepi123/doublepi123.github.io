@@ -1,4 +1,4 @@
-import { messages, resolveLanguage } from "./content.js";
+import { messages, resolveLanguage } from "./content.js?v=c39211f059af8a4b";
 
 const preferenceKey = "cox.site.language";
 const agentNames = { codex: "Codex", claude: "Claude", cursor: "Cursor" };
@@ -56,13 +56,16 @@ function applyLanguage() {
   document.querySelector('meta[property="og:title"]').content = copy["page.title"];
   document.querySelector('meta[property="og:description"]').content = copy["page.description"];
   for (const element of document.querySelectorAll("[data-i18n]")) {
-    element.textContent = copy[element.dataset.i18n];
+    const text = copy[element.dataset.i18n];
+    if (typeof text === "string" && text.trim()) element.textContent = text;
   }
   for (const element of document.querySelectorAll("[data-i18n-aria]")) {
-    element.setAttribute("aria-label", copy[element.dataset.i18nAria]);
+    const label = copy[element.dataset.i18nAria];
+    if (typeof label === "string" && label.trim()) element.setAttribute("aria-label", label);
   }
   for (const element of document.querySelectorAll("[data-i18n-href]")) {
-    element.href = copy[element.dataset.i18nHref];
+    const href = copy[element.dataset.i18nHref];
+    if (typeof href === "string" && href.trim()) element.href = href;
   }
   toggle.querySelector("[data-language-label]").textContent = language === "zh" ? "EN" : "中文";
   toggle.lang = language === "zh" ? "en" : "zh-CN";
