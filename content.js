@@ -6,6 +6,7 @@ export const messages = {
     skip: "跳到内容",
     "nav.label": "主导航",
     "nav.workflow": "工作流",
+    "nav.desktop": "桌面版",
     "nav.local": "本地优先",
     "nav.start": "快速开始",
     "hero.badge": "MIT 开源",
@@ -14,9 +15,9 @@ export const messages = {
     "hero.line1b": "一个工作台",
     "hero.description":
       "把 Codex、Claude、Cursor 等编码智能体带进同一个工作台。从对话、终端到代码变更，让开发回到你的电脑。",
-    "hero.cta": "开始使用",
+    "hero.cta": "下载桌面版",
     "hero.source": "在 GitHub 查看",
-    "hero.note": "Node.js 26.12.1 · 需自备智能体账号或 API",
+    "hero.note": "macOS / Windows · npm 运行浏览器版 · 需自备智能体账号或 API",
     "hero.stageNote": "一个窗口，完整上下文",
     "hero.localStamp": "本地控制面",
     "hero.bottom": "少切换窗口，多专注构建。",
@@ -89,6 +90,24 @@ export const messages = {
     "feature.terminal.description":
       "运行命令、查看输出，用 Git 工作树隔离并行任务，不再来回切换窗口。",
     "feature.terminal.worktree": "工作树",
+    "desktop.eyebrow": "Cox Desktop",
+    "desktop.mobile": "在 Android 上使用 CoCode",
+    "desktop.title": "不开终端，也有你的本地工作台",
+    "desktop.description":
+      "macOS 与 Windows 桌面客户端，内置独立 Node 运行时和仅限回环地址的本地后端。下载、打开，然后继续你的工作。",
+    "desktop.download": "下载桌面版",
+    "desktop.platforms": "macOS Apple Silicon / Intel · Windows x64",
+    "desktop.note":
+      "智能体 CLI、账号认证和模型订阅仍需单独配置。发布签名与平台验收说明见 Release。",
+    "desktop.feature1.title": "打开就用，无需先装 Node",
+    "desktop.feature1.description":
+      "内置界面、Node 运行时与本地后端；桌面数据与 CLI 分开保存，不影响现有工作区。",
+    "desktop.feature2.title": "更新不中断当前任务",
+    "desktop.feature2.description":
+      "更新下载后在下次正常启动时生效。激活前备份数据，失败时恢复旧后端及对应数据快照。",
+    "desktop.feature3.title": "桌面体验，仍然本地",
+    "desktop.feature3.description":
+      "保留本地认证与 Origin 校验，后端只监听 127.0.0.1；macOS 关闭窗口后，任务继续运行。",
     "local.eyebrow": "本地优先，不是云端托管",
     "local.title": "你的项目，不必搬家",
     "local.description":
@@ -123,7 +142,7 @@ export const messages = {
     "feature.more.keys": "自定义快捷键",
     "feature.more.secrets": "密钥管理",
     "feature.more.archive": "对话归档",
-    "start.eyebrow": "从终端，到你的主场",
+    "start.eyebrow": "也可以用命令行",
     "start.title": "一条命令，开始构建",
     "start.description": "无需克隆仓库，也不用安装开发依赖。npm 包已包含构建好的界面与本地服务。",
     "step1.title": "运行 Cox",
@@ -146,7 +165,7 @@ export const messages = {
     "closing.title1": "智能体已就位",
     "closing.title2": "轮到你的想法了",
     "closing.description": "开源、本地运行、由你掌控。",
-    "closing.cta": "开始使用 Cox",
+    "closing.cta": "下载 Cox 桌面版",
     "closing.source": "在 GitHub 上探索",
     "footer.label": "页脚链接",
     "footer.credit": "基于",
@@ -162,6 +181,7 @@ export const messages = {
     skip: "Skip to content",
     "nav.label": "Main navigation",
     "nav.workflow": "Workflow",
+    "nav.desktop": "Desktop",
     "nav.local": "Local first",
     "nav.start": "Quick start",
     "hero.badge": "MIT open source",
@@ -170,9 +190,9 @@ export const messages = {
     "hero.line1b": "One workspace.",
     "hero.description":
       "Bring Codex, Claude, Cursor, and more into one workspace. From threads and terminals to code changes, build on your own computer.",
-    "hero.cta": "Get started",
+    "hero.cta": "Download for desktop",
     "hero.source": "View on GitHub",
-    "hero.note": "Node.js 26.12.1 · Bring your own agent account or API",
+    "hero.note": "macOS / Windows · npm for browser · Bring your own agent account or API",
     "hero.stageNote": "One window. The whole picture.",
     "hero.localStamp": "Local control plane",
     "hero.bottom": "Fewer windows. More building.",
@@ -250,6 +270,24 @@ export const messages = {
     "feature.terminal.description":
       "Run commands, inspect output, and isolate parallel work with Git worktrees, without switching windows.",
     "feature.terminal.worktree": "Worktree",
+    "desktop.eyebrow": "Cox Desktop",
+    "desktop.mobile": "CoCode on Android",
+    "desktop.title": "Your local workspace, no terminal required",
+    "desktop.description":
+      "A desktop client for macOS and Windows, with its own Node runtime and a loopback-only local backend. Download, open, and get back to work.",
+    "desktop.download": "Download for desktop",
+    "desktop.platforms": "macOS Apple Silicon / Intel · Windows x64",
+    "desktop.note":
+      "Agent CLIs, authentication, and model subscriptions are configured separately. See the Release for signing and platform acceptance notes.",
+    "desktop.feature1.title": "Open and go. No Node install needed",
+    "desktop.feature1.description":
+      "The interface, Node runtime, and local backend are built in. Desktop data stays separate from the CLI and your existing workspaces.",
+    "desktop.feature2.title": "Updates without stopping your work",
+    "desktop.feature2.description":
+      "Downloaded updates activate on the next normal launch. Userdata is backed up first, and a failed activation restores the old backend and its matching snapshot.",
+    "desktop.feature3.title": "A desktop experience, still local",
+    "desktop.feature3.description":
+      "Local authentication and Origin checks remain in place, with the backend on 127.0.0.1. On macOS, tasks keep running when you close the window.",
     "local.eyebrow": "Local first, not cloud hosted",
     "local.title": "Your projects stay where they are",
     "local.description":
@@ -284,7 +322,7 @@ export const messages = {
     "feature.more.keys": "Custom keybindings",
     "feature.more.secrets": "Secrets",
     "feature.more.archive": "Thread archive",
-    "start.eyebrow": "From terminal to your workspace",
+    "start.eyebrow": "Prefer the command line?",
     "start.title": "One command. Start building.",
     "start.description":
       "No clone and no development dependencies. The npm package includes the built interface and local server.",
@@ -309,7 +347,7 @@ export const messages = {
     "closing.title1": "Your agents are ready.",
     "closing.title2": "Bring the idea.",
     "closing.description": "Open source. Runs locally. In your hands.",
-    "closing.cta": "Get started with Cox",
+    "closing.cta": "Download Cox Desktop",
     "closing.source": "Explore on GitHub",
     "footer.label": "Footer links",
     "footer.credit": "Built on",

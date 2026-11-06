@@ -185,6 +185,7 @@
         >
         <nav class="site-nav" aria-label="主导航" data-i18n-aria="nav.label">
           <a href="#workflow" data-i18n="nav.workflow">工作流</a>
+          <a href="#desktop" data-i18n="nav.desktop">桌面版</a>
           <a href="#local" data-i18n="nav.local">本地优先</a>
           <a href="#start" data-i18n="nav.start">快速开始</a>
         </nav>
@@ -224,8 +225,8 @@
               等编码智能体带进同一个工作台。从对话、终端到代码变更，让开发回到你的电脑。
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#start"
-                ><span data-i18n="hero.cta">开始使用</span
+              <a class="button button-primary" href="#desktop"
+                ><span data-i18n="hero.cta">下载桌面版</span
                 ><svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg
               ></a>
               <a class="button button-secondary" href="https://github.com/doublepi123/cox"
@@ -249,7 +250,7 @@
                 </button>
               </div>
               <p class="hero-note" data-i18n="hero.note">
-                Node.js 26.12.1 · 需自备智能体账号或 API
+                macOS / Windows · npm 运行浏览器版 · 需自备智能体账号或 API
               </p>
             </div>
           </div>
@@ -754,11 +755,78 @@
         </div>
       </section>
 
+      <section class="section desktop" id="desktop" aria-labelledby="desktop-title">
+        <div class="wrap desktop-grid">
+          <div class="desktop-copy">
+            <a class="mobile-link" href="https://cocode.doublepi.dev/"
+              ><span data-i18n="desktop.mobile">在 Android 上使用 CoCode</span
+              ><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right" /></svg
+            ></a>
+            <p class="eyebrow">
+              <span>02</span><span data-i18n="desktop.eyebrow">Cox Desktop</span>
+            </p>
+            <h2 id="desktop-title" data-i18n="desktop.title">不开终端，也有你的本地工作台</h2>
+            <p class="section-lead" data-i18n="desktop.description">
+              macOS 与 Windows 桌面客户端，内置独立 Node
+              运行时和仅限回环地址的本地后端。下载、打开，然后继续你的工作。
+            </p>
+            <div class="desktop-downloads">
+              <a class="button button-primary" href="https://github.com/doublepi123/cox/releases"
+                ><svg class="icon" aria-hidden="true"><use href="#i-monitor" /></svg
+                ><span data-i18n="desktop.download">下载桌面版</span
+                ><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right" /></svg
+              ></a>
+              <span class="desktop-platforms" data-i18n="desktop.platforms"
+                >macOS Apple Silicon / Intel · Windows x64</span
+              >
+            </div>
+            <p class="desktop-note" data-i18n="desktop.note">
+              智能体 CLI、账号认证和模型订阅仍需单独配置。发布签名与平台验收说明见 Release。
+            </p>
+          </div>
+          <div class="desktop-features">
+            <article>
+              <span class="desktop-feature-icon"
+                ><svg class="icon" aria-hidden="true"><use href="#i-monitor" /></svg
+              ></span>
+              <div>
+                <h3 data-i18n="desktop.feature1.title">打开就用，无需先装 Node</h3>
+                <p data-i18n="desktop.feature1.description">
+                  内置界面、Node 运行时与本地后端；桌面数据与 CLI 分开保存，不影响现有工作区。
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="desktop-feature-icon"
+                ><svg class="icon" aria-hidden="true"><use href="#i-restore" /></svg
+              ></span>
+              <div>
+                <h3 data-i18n="desktop.feature2.title">更新不中断当前任务</h3>
+                <p data-i18n="desktop.feature2.description">
+                  更新下载后在下次正常启动时生效。激活前备份数据，失败时恢复旧后端及对应数据快照。
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="desktop-feature-icon"
+                ><svg class="icon" aria-hidden="true"><use href="#i-lock" /></svg
+              ></span>
+              <div>
+                <h3 data-i18n="desktop.feature3.title">桌面体验，仍然本地</h3>
+                <p data-i18n="desktop.feature3.description">
+                  保留本地认证与 Origin 校验，后端只监听 127.0.0.1；macOS 关闭窗口后，任务继续运行。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section local" id="local" aria-labelledby="local-title">
         <div class="wrap local-grid">
           <div class="local-copy">
             <p class="eyebrow">
-              <span>02</span><span data-i18n="local.eyebrow">本地优先，不是云端托管</span>
+              <span>03</span><span data-i18n="local.eyebrow">本地优先，不是云端托管</span>
             </p>
             <h2 id="local-title" data-i18n="local.title">你的项目，不必搬家</h2>
             <p class="section-lead" data-i18n="local.description">
@@ -851,7 +919,7 @@
           <div class="section-heading split-heading">
             <div>
               <p class="eyebrow">
-                <span>03</span><span data-i18n="details.eyebrow">顺手，也合身</span>
+                <span>04</span><span data-i18n="details.eyebrow">顺手，也合身</span>
               </p>
               <h2 id="details-title" data-i18n="details.title">细节，为长时间工作而生</h2>
             </div>
@@ -934,7 +1002,7 @@
         <div class="wrap start-grid">
           <div class="start-copy">
             <p class="eyebrow">
-              <span>04</span><span data-i18n="start.eyebrow">从终端，到你的主场</span>
+              <span>05</span><span data-i18n="start.eyebrow">也可以用命令行</span>
             </p>
             <h2 id="start-title" data-i18n="start.title">一条命令，开始构建</h2>
             <p class="section-lead" data-i18n="start.description">
@@ -1052,8 +1120,8 @@
           </h2>
           <p data-i18n="closing.description">开源、本地运行、由你掌控。</p>
           <div class="closing-actions">
-            <a class="button button-primary" href="#start"
-              ><span data-i18n="closing.cta">开始使用 Cox</span
+            <a class="button button-primary" href="#desktop"
+              ><span data-i18n="closing.cta">下载 Cox 桌面版</span
               ><svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg></a
             ><a class="button button-secondary" href="https://github.com/doublepi123/cox"
               ><svg class="icon" aria-hidden="true"><use href="#i-github" /></svg
